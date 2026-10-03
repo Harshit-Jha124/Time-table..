@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EE Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>EE DEPARTMENT</h1>
+            <p>Weekly Class Schedule</p>
+        </div>
+
+        <div class="controls">
+            <span class="label">Select Batch Group</span>
+            <div class="gt">
+                <button id="bG1" onclick="sG('G1')" class="act">Group G1</button>
+                <button id="bG2" onclick="sG('G2')">Group G2</button>
+            </div>
+
+            <span class="label">Select Day</span>
+            <div class="tabs" id="tbs"></div>
+        </div>
+
+        <div class="stats">
+            <div><span id="sL">0h</span>Lectures</div>
+            <div><span id="sB">0h</span>Labs</div>
+            <div><span id="sT">0h</span>Total / Week</div>
+        </div>
+
+        <div class="list" id="lst"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
